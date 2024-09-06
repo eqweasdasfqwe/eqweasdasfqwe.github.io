@@ -1,0 +1,88 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #070707;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: left;
+}
+
+.buttons {
+    margin-bottom: 20px;
+    padding-top: 65px
+}
+
+.block-button {
+    display: inline-block;
+}
+
+.block-button-link {
+    position: absolute;
+    left: 6rem;
+    background-color: #444444; 
+    color: #ffffff;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.block-button-link:hover {
+    background-color: #afafaf;
+    color:#030303
+}
+
+.member-list {
+    position: absolute;
+    left: 5rem;
+    top: 10rem;
+    text-align: left;
+}
+
+.biolink {
+    left: 5rem;
+    display: flex;
+    margin: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-size: 9.5px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.biolink:hover {
+    color: #afafaf;
+}
+
+.ascii-art {
+    position: absolute;
+    right: 3rem;
+    user-select: none;
+}
+
+.ascii-art pre {
+    font-weight: bold;
+}
+
+@media (max-width: 1090px) {
+    .ascii-art {
+        bottom: 8rem;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ascii-art {
+        bottom: 1rem;
+        font-size: 5px;
+    }
+}

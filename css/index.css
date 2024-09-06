@@ -1,0 +1,118 @@
+.links {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #444444;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 80px;
+    bottom: -8.5rem;
+}
+
+@media (max-width: 768px) {
+    .buttons {
+        gap: 50px;
+    }
+}
+
+.buttons.is-vertical {
+    flex-direction: column;
+}
+
+.buttons>.block-button {
+    display: inline-block;
+    margin: 0;
+}
+
+.buttons.is-vertical>.block-button:last-child {
+    margin-bottom: 0;
+}
+
+.buttons.is-content-justification-left {
+    justify-content: flex-start;
+}
+
+.buttons.is-content-justification-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons.is-content-justification-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.buttons.is-content-justification-space-between {
+    justify-content: space-between;
+}
+
+.buttons.aligncenter {
+    text-align: center;
+    justify-content: center;
+}
+
+.buttons.aligncenter .wp-block-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.buttons[style*="text-decoration"] .block-button,
+.buttons[style*="text-decoration"] .block-button-link {
+    text-decoration: inherit;
+}
+
+.block-button-link {
+    background-color: #444444;
+    color: #ffffff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 10px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.block-button-link:hover {
+    background-color: #afafaf;
+    color: #030303;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 8rem;
+    font-size: 8px;
+    color: #444444
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    width: 350px;
+}
