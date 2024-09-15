@@ -223,24 +223,77 @@
                         transform: scale(0.5);
                     }
                 }
+
+                .popup {
+                    display: none;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 250px;
+                    height: 250px;
+                    background: #141414;
+                    /* Dark background */
+                    border: 2px solid #d4d4d4;
+                    /* gray border */
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+                    /* Dark shadow*/
+                    z-index: 100;
+                    text-align: center;
+                    color: #d4d4d4;
+                    /* Light gray text color */
+                    font-family: 'Chrome Hearts', sans-serif;
+                    padding: 10px;
+                    cursor: move;
+                }
+
+                .popup img {
+                    border: 1px solid #d4d4d4;
+                    /* border */
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+
+                .popup .ok-button {
+                    display: inline-block;
+                    padding: 5px 15px;
+                    border: none;
+                    background: #d4d4d4;
+                    color: #dbd4d4;
+                    cursor: pointer;
+                    margin-top: 10px;
+                    font-weight: bold;
+                    font-family: 'Chrome Hearts', sans-serif;
+                    transition: background-color 0.3s;
+                }
+
+                .popup .ok-button:hover {
+                    background-color: #000000;
+                }
             </style>
 </head>
 
 <body>
     <div id="overlay"> meow nigga </div>
     <div class="audio-bg"> <audio id="Audio" loop muted>
-            <source src="audio/theo.mp3" type="audio/mpeg"> 
+            <source src="audio/theo.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio> </div>
     <div class="worry-text">WORRY</div>
-    <div class="bio-container"> <img src="media/pfp.jpg" alt="Layce">
+    <div class="bio-container"> <img src="media/pfp.jpg" alt="[MEMBER]]" id="profilePic">
         <div class="username">Worry Theo</div>
         <div class="contact-info">
-            <p>Telegram: <a href="https://t.me/TheosCode" target="_blank" style="text-decoration: none;">TheosCode</a></p>
+            <p>Telegram: <a href="https://t.me/TheosCode" target="_blank" style="text-decoration: none;">TheosCode</a>
+            </p>
             <p>Discord: <a href="https://discordapp.com/users/1277221899562385449" target="_blank" style="text-decoration: none;">7331s</a></p>
         </div>
     </div>
-<script src="../js/cursor.js"></script>
-<script> document.addEventListener("DOMContentLoaded", function () { const audio = document.getElementById("Audio"); const audioControl = document.getElementById("audio-control"); audio.volume = 0; overlay.addEventListener("click", () => { audio.muted = false; audio.play(); overlay.style.display = "none"; }); function setVolume(level) { if (level >= 0 && level <= 1) { audio.volume = level; } else { console.error("Volume level must be between 0 and 1"); } } setVolume(0.3); }); </script>
+
+    <script src="../js/cursor.js"></script>
+    <script> document.addEventListener("DOMContentLoaded", function () { const audio = document.getElementById("Audio"); const audioControl = document.getElementById("audio-control"); audio.volume = 0; overlay.addEventListener("click", () => { audio.muted = false; audio.play(); overlay.style.display = "none"; }); function setVolume(level) { if (level >= 0 && level <= 1) { audio.volume = level; } else { console.error("Volume level must be between 0 and 1"); } } setVolume(0.3); }); </script>
 
 </html>
