@@ -4,7 +4,7 @@ ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var letters = '我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼';
+var letters = '我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼我不喜歡黑鬼';
 letters = letters.split('');
 
 var fontSize = 10, columns = canvas.width / fontSize;
