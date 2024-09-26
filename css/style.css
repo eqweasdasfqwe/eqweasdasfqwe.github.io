@@ -1,10 +1,14 @@
- .rgb{
+body {
+      background-color: black;
+    }
+.rgb{
     text-align: center;
     margin: auto;
     animation: colorRotate 10s linear 0s infinite;
     width: 50%;
     height: 25%;
 }
+
     @keyframes colorRotate {
     from {
         color: #6666ff;
