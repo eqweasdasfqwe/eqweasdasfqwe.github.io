@@ -1,7 +1,54 @@
-
-<title>Worry</title>
+<html>
+<body>
+<title>worried</title>
 <link rel="stylesheet" href="css/style.css">
-<center>
-<h1 class="rgb">soon</h1>
-<img width="20%" height="auto" src="https://files.catbox.moe/ybfrmx.jpg" controls></img>
-  </center>
+<link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+  <div id="loading" class="loading">
+    <button id="button">don't worry</button>
+  </div>
+
+  <style>
+    body {
+      cursor: url('files/penguin.cur'), auto;
+    }
+    .fade-out {
+      opacity: 0;
+      transition: opacity 1s ease-out;
+    }
+  </style>
+
+  <center>
+  <h1 class="worry">worry</h1>
+  <div>
+    <pre class="members">
+valdz
+cuzy
+ry
+coma
+slitted
+bella
+    </pre>
+  </div>
+</center>
+
+<img width="20%" height="auto" style="position: fixed; bottom: 0%; right: 0%; margin: 0;" src="https://files.catbox.moe/x5el0z.gif"></img>
+
+  <audio id="music" src="https://files.catbox.moe/jw3wfy.mp3"></audio>
+
+  <script src="js/cursor.js"></script>
+  <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+  <script>
+    document.getElementById('button').addEventListener('click', function() {
+    var music = document.getElementById('music');
+    music.play();
+
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.classList.add('fade-out');
+
+    setTimeout(function() {
+      loadingScreen.style.display = 'none';
+    }, 1000);
+  });
+  </script>
+</body>
+</html>
